@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typix - Type To Pixels</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div
+      id="loading"
+      style="
+        position: fixed;
+        inset: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--background);
+        z-index: 9999;
+        transition: opacity 0.3s;
+      "
+    >
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 16px;
+        "
+      >
+        <span class="dot-bounce-loader">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </span>
+        <div style="text-align: center">
+          <h1
+            id="loading-title"
+            style="
+              font-size: 1.5rem;
+              font-weight: 600;
+              margin: 0;
+              color: var(--foreground);
+              display: none;
+            "
+          ></h1>
+        </div>
+      </div>
+    </div>
+    <style id="loading-styles">
+      :root {
+        /* Light theme colors matching Tailwind config */
+        --background: oklch(0.985 0 0);
+        --foreground: oklch(0.141 0.005 285.823);
+        --muted-foreground: oklch(0.705 0.015 286.067);
+      }
+
+      .dark {
+        /* Dark theme colors matching Tailwind config */
+        --background: oklch(0.141 0.005 285.823);
+        --foreground: oklch(0.985 0 0);
+        --muted-foreground: oklch(0.705 0.015 286.067);
+      }
+
+      .dot-bounce-loader {
+        display: flex;
+        gap: 0.5em;
+        align-items: flex-end;
+        height: 2.5em;
+      }
+      .dot-bounce-loader .dot {
+        width: 0.8em;
+        height: 0.8em;
+        background: var(--foreground);
+        border-radius: 50%;
+        display: inline-block;
+        animation: dot-bounce 1s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      }
+      .dot-bounce-loader .dot:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .dot-bounce-loader .dot:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+      @keyframes dot-bounce {
+        0%,
+        80%,
+        100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-1em);
+        }
+      }
+    </style>
+    <script>
+      // Theme detection and setup
+      (function () {
+        function getStoredTheme() {
+          try {
+            const uiStore = localStorage.getItem("ui-store");
+            if (uiStore) {
+              const parsed = JSON.parse(uiStore);
+              return parsed.state?.theme || "system";
+            }
+          } catch (e) {
+            console.warn("Failed to parse ui-store:", e);
+          }
+          return "system";
+        }
+
+        function getSystemTheme() {
+          return window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+        }
+
+        function applyTheme(theme) {
+          const resolvedTheme = theme === "system" ? getSystemTheme() : theme;
+          document.documentElement.className =
+            resolvedTheme === "dark" ? "dark" : "";
+
+          // No need to manually update loading background as CSS variables handle it
+        }
+
+        // Apply initial theme
+        const storedTheme = getStoredTheme();
+        applyTheme(storedTheme);
+
+        // Listen for system theme changes if using system theme
+        if (storedTheme === "system") {
+          const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+          mediaQuery.addEventListener("change", () => {
+            applyTheme("system");
+          });
+        }
+      })();
+    </script>
+    <script type="module" src="/src/app/main.tsx"></script>
+  </body>
+</html>

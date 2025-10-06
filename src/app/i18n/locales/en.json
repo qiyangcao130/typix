@@ -1,0 +1,339 @@
+{
+	"common": {
+		"save": "Save",
+		"cancel": "Cancel",
+		"delete": "Delete",
+		"edit": "Edit",
+		"create": "Create",
+		"loading": "Loading...",
+		"error": "Error",
+		"success": "Success",
+		"unknown": "Unknown",
+		"yesterday": "Yesterday",
+		"daysAgo": "days ago"
+	},
+	"app": {
+		"initializing": "Initializing",
+		"initializationFailed": "Initialization Failed",
+		"retry": "Retry"
+	},
+	"chat": {
+		"newChat": "New Creation",
+		"newChatTitle": "New Creation",
+		"typeMessage": "Type to generate, press Enter to send • Shift+Enter for new line",
+		"sendMessage": "Send message",
+		"uploadForImageToImage": "Upload image for image-to-image generation",
+		"textToImageModelNoUpload": "Current model only supports text-to-image generation",
+		"maxImagesReached": "Maximum images reached",
+		"imageCount": "Number of images to generate",
+		"aspectRatio": "Aspect Ratio",
+		"auto": "Auto",
+		"autoAspectRatio": "Let the model decide the image dimensions",
+		"tooManyImagesSelected": "Too many images selected",
+		"onlyAddedImages": "Only added {{added}} of {{selected}} selected images due to limit",
+		"modelChanged": "Model Changed",
+		"textToImageOnlyModel": "Current model only supports text-to-image generation, uploaded images have been cleared",
+		"generateImage": "Generate image",
+		"chatHistory": "Creation History",
+		"noChats": "No creation sessions yet",
+		"chatWith": "Start creating",
+		"imageGenerated": "Image generated successfully",
+		"thinking": "AI is thinking...",
+		"generating": "Generating image...",
+		"selectModel": "Select AI Model",
+		"welcomeMessage": "Describe the image you'd like me to create! Let your imagination run wild.",
+		"generatedImage": "Generated image",
+		"userImage": "Uploaded image",
+		"generatedOrUploaded": "Generated or uploaded",
+		"ai": "AI",
+		"clickToEnlarge": "Click to enlarge image",
+		"actions": {
+			"copy": "Copy",
+			"download": "Download",
+			"delete": "Delete"
+		},
+		"error": {
+			"title": "Error",
+			"default": "An error occurred while sending the message",
+			"createChat": "Failed to create chat - no available AI models",
+			"noModel": "No available AI models - please configure providers first",
+			"createNewChat": "Failed to create new chat - please select a provider and model"
+		},
+		"generation": {
+			"failed": "Generation failed",
+			"configError": "Provider configuration error",
+			"configErrorDesc": "Please check your provider settings and try again",
+			"apiError": "API request failed",
+			"apiErrorDesc": "The service is temporarily unavailable, please try again later",
+			"timeoutError": "Request timeout",
+			"timeoutErrorDesc": "The request took too long, please try again",
+			"unknownError": "Unknown error",
+			"unknownErrorDesc": "An unexpected error occurred, please try again",
+			"goToSettings": "Go to Settings",
+			"retry": "Retry"
+		}
+	},
+	"navigation": {
+		"chat": "Chat",
+		"settings": "Settings"
+	},
+	"settings": {
+		"title": "Settings",
+		"description": "Manage your application preferences",
+		"language": "Language",
+		"theme": "Theme",
+		"themeColor": "Theme Color",
+		"themeColorDescription": "Customize the application's primary color",
+		"model": "AI Model",
+		"general": "General",
+		"appearance": "Appearance",
+		"advanced": "Advanced",
+		"selectLanguage": "Select Language",
+		"sections": {
+			"common": "General Settings",
+			"provider": "AI Providers"
+		},
+		"provider": {
+			"title": "AI Providers",
+			"description": "Manage your AI service configurations",
+			"selectOption": "Please select an option",
+			"selectPlaceholder": "Please select...",
+			"settingsSaved": "Settings saved",
+			"saveFailed": "Save failed",
+			"saveError": "An error occurred while saving settings",
+			"enabled": "Enabled",
+			"disabled": "Disabled",
+			"selectProvider": "Select Provider",
+			"selectProviderDescription": "Please select an AI provider from the left list to configure its settings",
+			"configureToStart": "Configure AI providers to start using services"
+		},
+		"validation": {
+			"required": "This field is required",
+			"selectOption": "Please select an option",
+			"validUrl": "Please enter a valid URL",
+			"validNumber": "Please enter a valid number",
+			"minValue": "Minimum value is {{min}}",
+			"maxValue": "Maximum value is {{max}}"
+		}
+	},
+	"auth": {
+		"welcomeBack": "Welcome Back",
+		"createAccount": "Create Account",
+		"loginDescription": "Login to your account to continue",
+		"registerDescription": "Register a new account to start your creative journey",
+		"username": "Username",
+		"email": "Email",
+		"password": "Password",
+		"enterUsername": "Please enter username",
+		"enterEmail": "Please enter email address",
+		"enterPassword": "Please enter password",
+		"login": "Login",
+		"register": "Register",
+		"processing": "Processing...",
+		"loginFailed": "Login failed",
+		"registerFailed": "Registration failed",
+		"networkError": "Network error, please try again later",
+		"or": "or",
+		"noAccount": "Don't have an account?",
+		"hasAccount": "Already have an account?",
+		"signUpNow": "Sign up now",
+		"goToLogin": "Go to login",
+		"welcomeMessage": "Welcome",
+		"loginToSave": "Login to save your creations",
+		"continueWithGoogle": "Continue with Google",
+		"continueWithGithub": "Continue with GitHub",
+		"tryGoogleOneTap": "Try Google One Tap",
+		"socialLoginFailed": "Social login failed",
+		"googleOneTapFailed": "Google One Tap failed",
+		"verifyEmail": "Verify Your Email",
+		"otpDescription": "We've sent a verification code to {{email}}. Please enter the code below.",
+		"otpInstructions": "Please enter the verification code sent to your email",
+		"verificationCode": "Verification Code",
+		"enterVerificationCode": "Enter 6-digit code",
+		"verifyCode": "Verify Code",
+		"didntReceiveCode": "Didn't receive the code?",
+		"resendCode": "Resend Code",
+		"otpVerificationFailed": "OTP verification failed",
+		"otpVerificationError": "OTP verification error",
+		"otpResendFailed": "Failed to resend OTP",
+		"otpResendError": "Error resending OTP",
+		"invalidVerificationCode": "Invalid verification code",
+		"verificationCodeExpired": "Verification code has expired",
+		"tooManyAttempts": "Too many failed attempts, please try again later",
+		"invalidEmail": "Invalid email address",
+		"userNotFound": "User not found",
+		"invalidEmailOrPassword": "Invalid email or password",
+		"passwordTooShort": "Password too short",
+		"passwordTooLong": "Password too long",
+		"userAlreadyExists": "User already exists with this email address"
+	},
+	"user": {
+		"avatar": "User avatar",
+		"nickname": "Nickname",
+		"signOut": "Sign out",
+		"online": "Online",
+		"defaultName": "User"
+	},
+	"theme": {
+		"auto": "Auto",
+		"light": "Light",
+		"dark": "Dark",
+		"selectTheme": "Select Theme",
+		"selectThemeColor": "Select Theme Color"
+	},
+	"language": {
+		"label": "English",
+		"followSystem": "Follow System"
+	},
+	"providers": {
+		"cloudflare": {
+			"description": "AI services powered by Cloudflare Workers AI",
+			"settings": {
+				"builtin": {
+					"title": "Built-in AI Services",
+					"description": "Use Cloudflare's built-in AI services without additional configuration",
+					"placeholder": "Use Cloudflare built-in AI services"
+				},
+				"accountId": {
+					"title": "Account ID",
+					"description": "Your Cloudflare account identifier",
+					"placeholder": "Enter your Cloudflare account ID"
+				},
+				"apiKey": {
+					"title": "API Key",
+					"description": "Your Cloudflare API key for authentication",
+					"placeholder": "Enter your Cloudflare API key"
+				}
+			},
+			"models": {
+				"@cf/leonardo/lucid-origin": {
+					"description": "Lucid Origin from Leonardo.AI is their most adaptable and prompt-responsive model to date."
+				},
+				"@cf/black-forest-labs/flux-1-schnell": {
+					"description": "FLUX.1 [schnell] is a 12 billion parameter rectified flow transformer capable of generating images from text descriptions."
+				},
+				"@cf/bytedance/stable-diffusion-xl-lightning": {
+					"description": "SDXL-Lightning is a lightning-fast text-to-image generation model. It can generate high-quality 1024px images in a few steps."
+				},
+				"@cf/lykon/dreamshaper-8-lcm": {
+					"description": "Stable Diffusion model that has been fine-tuned to be better at photorealism without sacrificing range."
+				},
+				"@cf/runwayml/stable-diffusion-v1-5-img2img": {
+					"description": "Stable Diffusion is a latent text-to-image diffusion model capable of generating photo-realistic images. Img2img generate a new image from an input image with Stable Diffusion."
+				},
+				"@cf/runwayml/stable-diffusion-v1-5-inpainting": {
+					"description": "Stable Diffusion Inpainting is a latent text-to-image diffusion model capable of generating photo-realistic images given any text input, with the extra capability of inpainting the pictures by using a mask."
+				},
+				"@cf/stabilityai/stable-diffusion-xl-base-1.0": {
+					"description": "Diffusion-based text-to-image generative model by Stability AI. Generates and modify images based on text prompts."
+				}
+			}
+		},
+		"openai": {
+			"description": "AI services powered by OpenAI",
+			"settings": {
+				"apiKey": {
+					"title": "API Key",
+					"description": "Your OpenAI API key for authentication",
+					"placeholder": "Enter your OpenAI API key"
+				},
+				"baseURL": {
+					"title": "Base URL",
+					"description": "The base URL for OpenAI API endpoint",
+					"placeholder": "https://api.openai.com/v1"
+				},
+				"model": {
+					"title": "Model",
+					"description": "The AI model to use for image generation",
+					"placeholder": "The model to use for image generation"
+				}
+			},
+			"models": {
+				"gpt-image-1": {
+					"description": "Gpt-image-1 is a multimodal model that can create images from text or image inputs, with various styles, guidelines, and applications."
+				}
+			}
+		},
+		"fal": {
+			"description": "Generative media platform for developers",
+			"settings": {
+				"apiKey": {
+					"title": "API Key",
+					"description": "Your FAL API key for authentication",
+					"placeholder": "Enter your FAL API key"
+				}
+			},
+			"models": {
+				"fal-ai/flux-pro/kontext/max": {
+					"description": "FLUX.1 Kontext [max] is a model with greatly improved prompt adherence and typography generation meet premium consistency for editing without compromise on speed."
+				},
+				"fal-ai/flux-pro/kontext": {
+					"description": "FLUX.1 Kontext [pro] handles both text and reference images as inputs, seamlessly enabling targeted, local edits and complex transformations of entire scenes."
+				},
+				"fal-ai/qwen-image": {
+					"description": "Qwen-Image is a powerful image generation foundation model capable of complex text rendering and precise image editing."
+				}
+			}
+		},
+		"flux": {
+			"description": "High-quality AI image generation by Black Forest Labs",
+			"settings": {
+				"apiKey": {
+					"title": "API Key",
+					"description": "Your API key for authentication",
+					"placeholder": "Enter your API key"
+				}
+			},
+			"models": {
+				"flux-kontext-pro": {
+					"description": "FLUX.1 Kontext Pro - Advanced image-to-image generation with superior prompt adherence and editing capabilities."
+				},
+				"flux-kontext-max": {
+					"description": "FLUX.1 Kontext Max - Premium image-to-image generation with maximum quality and consistency for professional editing."
+				},
+				"flux-dev": {
+					"description": "FLUX.1 Dev - High-quality text-to-image generation model optimized for development and experimentation."
+				},
+				"flux-pro": {
+					"description": "FLUX.1 Pro - Professional-grade text-to-image generation with excellent prompt adherence and image quality."
+				},
+				"flux-pro-1.1": {
+					"description": "FLUX.1 Pro 1.1 - Enhanced version of FLUX Pro with improved performance and quality."
+				},
+				"flux-pro-1.1-ultra": {
+					"description": "FLUX.1 Pro 1.1 Ultra - The most advanced FLUX model with ultra-high quality generation and precision."
+				}
+			}
+		},
+		"google": {
+			"description": "Advanced AI image generation powered by Google Gemini and Imagen",
+			"settings": {
+				"apiKey": {
+					"title": "API Key",
+					"description": "Your Google AI API key for authentication",
+					"placeholder": "Enter your Google AI API key"
+				}
+			},
+			"models": {
+				"gemini-2.5-flash-image-preview": {
+					"description": "Nano Banana[Gemini 2.5 Flash Image] is Google's state-of-the-art image generation and editing model."
+				},
+				"gemini-2.0-flash-preview-image-generation": {
+					"description": "Gemini 2.0 Flash Image Generation - Advanced multimodal model for high-quality image generation and editing."
+				},
+				"imagen-4.0-generate-001": {
+					"description": "Imagen 4.0 - Google's latest text-to-image generation model with exceptional quality and prompt adherence."
+				},
+				"imagen-4.0-ultra-generate-001": {
+					"description": "Imagen 4.0 Ultra - Premium version of Imagen 4.0 with ultra-high resolution and superior image quality."
+				},
+				"imagen-4.0-fast-generate-001": {
+					"description": "Imagen 4.0 Fast - Optimized version of Imagen 4.0 for rapid text-to-image generation with reduced latency."
+				},
+				"imagen-3.0-generate-002": {
+					"description": "Imagen 3.0 - Stable and reliable text-to-image generation model with consistent output quality."
+				}
+			}
+		}
+	}
+}
